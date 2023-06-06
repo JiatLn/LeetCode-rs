@@ -8,16 +8,9 @@ impl Solution {
     pub fn max_rep_opt1(text: String) -> i32 {
         let chs = text.as_bytes();
         let mut hm = HashMap::new();
-        for &ch in chs.iter() {
-            match hm.get(&ch) {
-                Some(v) => {
-                    hm.insert(ch, v + 1);
-                }
-                None => {
-                    hm.insert(ch, 1);
-                }
-            }
-        }
+        chs.iter().for_each(|&ch| {
+            *hm.entry(ch).or_insert(0) += 1;
+        });
         let n = chs.len();
         let mut i = 0;
         let mut ans = 0;
