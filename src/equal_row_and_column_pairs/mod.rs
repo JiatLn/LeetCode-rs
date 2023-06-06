@@ -4,24 +4,14 @@ struct Solution;
 impl Solution {
     pub fn equal_pairs(grid: Vec<Vec<i32>>) -> i32 {
         let n = grid.len();
-        let mut rows = Vec::with_capacity(n);
-        for row in grid.iter() {
-            rows.push(
-                row
-                    .iter()
-                    .map(|&v| v.to_string())
-                    .collect::<Vec<_>>()
-                    .join("-")
-            );
-        }
         let mut ans = 0;
         for i in 0..n {
-            let mut v = Vec::with_capacity(n);
+            let mut col = Vec::with_capacity(n);
             for j in 0..n {
-                v.push(grid[j][i].to_string());
+                col.push(grid[j][i]);
             }
-            for row in rows.iter() {
-                if *row == v.join("-") {
+            for row in grid.iter() {
+                if *row == col {
                     ans += 1;
                 }
             }
