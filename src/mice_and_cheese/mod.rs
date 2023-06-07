@@ -8,7 +8,7 @@ impl Solution {
         for i in 0..len {
             diffs.push([reward1[i] - reward2[i], reward1[i], reward2[i]]);
         }
-        diffs.sort_by(|a, b| b[0].partial_cmp(&a[0]).unwrap());
+        diffs.sort_by(|a, b| b[0].cmp(&a[0]));
         let mut cnt = 0;
         diffs.iter().fold(0, |acc, e| {
             acc +
