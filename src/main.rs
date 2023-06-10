@@ -7,5 +7,6 @@ mod number_of_distinct_averages; // No.2465
 mod apply_operations_to_an_array; // No.2460
 mod equal_row_and_column_pairs; // No.2352
 mod mice_and_cheese; // No.2611
+mod compare_strings_by_frequency_of_the_smallest_character; // No.1170
 
 fn main() {}
