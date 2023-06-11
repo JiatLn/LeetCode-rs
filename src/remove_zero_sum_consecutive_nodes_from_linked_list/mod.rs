@@ -18,7 +18,7 @@ impl ListNode {
 struct Solution;
 
 impl Solution {
-    pub fn remove_zero_sum_sublists(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn remove_zero_sum_sublists(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         if head.is_none() {
             return None;
         }
@@ -32,9 +32,8 @@ impl Solution {
             cursor = cursor.unwrap().next;
         }
         let next = head.clone().unwrap().next;
-        let mut node = head.clone().unwrap();
-        node.next = Self::remove_zero_sum_sublists(next);
-        Some(node)
+        head.as_mut().unwrap().next = Self::remove_zero_sum_sublists(next);
+        head
     }
 }
 
