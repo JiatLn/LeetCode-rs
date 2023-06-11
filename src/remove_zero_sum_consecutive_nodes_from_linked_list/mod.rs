@@ -24,12 +24,12 @@ impl Solution {
         }
         let mut sum = 0;
         let mut cursor = head.clone();
-        while cursor.is_some() {
-            sum += cursor.as_ref().unwrap().val;
+        while let Some(node) = cursor {
+            sum += node.val;
             if sum == 0 {
-                return Self::remove_zero_sum_sublists(cursor.unwrap().next);
+                return Self::remove_zero_sum_sublists(node.next);
             }
-            cursor = cursor.unwrap().next;
+            cursor = node.next;
         }
         let next = head.clone().unwrap().next;
         head.as_mut().unwrap().next = Self::remove_zero_sum_sublists(next);
