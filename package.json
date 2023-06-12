@@ -1,0 +1,29 @@
+{
+  "name": "leetcode-rs",
+  "version": "1.0.0",
+  "description": "leetcode for rust",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add": "node --loader ts-node/esm --experimental-specifier-resolution=node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiatLn/LeetCode-rs.git"
+  },
+  "keywords": [
+    "leetcode",
+    "rust"
+  ],
+  "author": "cx33",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JiatLn/LeetCode-rs/issues"
+  },
+  "homepage": "https://github.com/JiatLn/LeetCode-rs#readme",
+  "devDependencies": {
+    "@types/node": "^20.3.0",
+    "ts-node": "^10.9.1"
+  }
+}
