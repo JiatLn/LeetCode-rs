@@ -9,5 +9,6 @@ mod equal_row_and_column_pairs; // No.2352
 mod mice_and_cheese; // No.2611
 mod remove_zero_sum_consecutive_nodes_from_linked_list; // No.1170
 mod compare_strings_by_frequency_of_the_smallest_character; // No.1171
+mod two_sum; // No.1
 
 fn main() {}
