@@ -13,11 +13,33 @@ console.log('题目链接', questionLink)
 let questionName = questionLink.split("/").filter(Boolean).at(-1);
 
 try {
-  questionName = questionName.replaceAll("-", "_")
-  await mkdir(`src/${questionName}`)
-  const file = `src/${questionName}/mod.rs`
-  await writeFile(file, `/// <${questionLink}> \nstruct Solution;`)
+  const fileName = questionName.replaceAll("-", "_")
+  await mkdir(`src/${fileName}`)
+  const file = `src/${fileName}/mod.rs`
+  await writeFile(file, rsTemplate(questionLink, fileName))
   console.log(`文件创建成功 ${file}`)
+  console.log(`[TODO] 前往 src/main.rs 中添加 mod ${fileName};`)
 } catch (err) {
   console.error(err.message);
+}
+
+function rsTemplate(questionLink: string, modName: string) {
+  return `/// <${questionLink}>
+struct Solution;
+
+impl Solution {
+
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::${modName}::Solution;
+
+    #[test]
+    fn test_() {
+        
+    }
+}
+
+`
 }
