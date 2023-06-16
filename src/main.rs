@@ -12,5 +12,6 @@ mod compare_strings_by_frequency_of_the_smallest_character; // No.1171
 mod two_sum; // No.1
 mod number_of_unequal_triplets_in_array; // No.2475
 mod number_of_times_binary_string_is_prefix_aligned; // No.1375
+mod can_make_palindrome_from_substring; // No.1177
 
 fn main() {}
