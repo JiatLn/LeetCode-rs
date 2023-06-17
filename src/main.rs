@@ -14,5 +14,6 @@ mod number_of_unequal_triplets_in_array; // No.2475
 mod number_of_times_binary_string_is_prefix_aligned; // No.1375
 mod can_make_palindrome_from_substring; // No.1177
 mod minimum_cuts_to_divide_a_circle; // No.2481
+mod powx_n_by_leetcode_solution; // No.50
 
 fn main() {}
