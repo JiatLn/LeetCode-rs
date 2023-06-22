@@ -17,5 +17,6 @@ mod minimum_cuts_to_divide_a_circle; // No.2481
 mod powx_n_by_leetcode_solution; // No.50
 mod number_of_closed_islands; // No.1254
 mod greatest_sum_divisible_by_three; // No.1262
+mod pond_sizes_lcci; // No.16.19
 
 fn main() {}
