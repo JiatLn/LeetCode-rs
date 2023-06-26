@@ -20,5 +20,6 @@ mod greatest_sum_divisible_by_three; // No.1262
 mod pond_sizes_lcci; // No.16.19
 mod maximum_value_of_a_string_in_an_array; // No.2496
 mod circle_and_rectangle_overlapping; // No.1401
+mod find_the_pivot_integer; // No.2485
 
 fn main() {}
