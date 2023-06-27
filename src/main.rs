@@ -21,5 +21,6 @@ mod pond_sizes_lcci; // No.16.19
 mod maximum_value_of_a_string_in_an_array; // No.2496
 mod circle_and_rectangle_overlapping; // No.1401
 mod find_the_pivot_integer; // No.2485
+mod maximum_subarray_sum_with_one_deletion; // No.1186
 
 fn main() {}
