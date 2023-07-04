@@ -31,7 +31,8 @@ mod tests {
 
     #[test]
     fn test_() {
-        
+        let ans = Solution::
+        assert_eq!(ans, );
     }
 }
 
