@@ -24,5 +24,6 @@ mod find_the_pivot_integer; // No.2485
 mod maximum_subarray_sum_with_one_deletion; // No.1186
 mod reconstruct_a_2_row_binary_matrix;
 mod circular_sentence;
+mod sum_in_a_matrix;
 
 fn main() {}
