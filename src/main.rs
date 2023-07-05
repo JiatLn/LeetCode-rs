@@ -25,5 +25,6 @@ mod maximum_subarray_sum_with_one_deletion; // No.1186
 mod reconstruct_a_2_row_binary_matrix;
 mod circular_sentence;
 mod sum_in_a_matrix;
+mod k_items_with_the_maximum_sum;
 
 fn main() {}
