@@ -11,7 +11,8 @@ impl Solution {
         if k <= num_ones + num_zeros {
             k.min(num_ones)
         } else {
-            num_ones - (k - num_ones - num_zeros)
+            // num_ones - (k - num_ones - num_zeros)
+            num_ones * 2 + num_zeros - k
         }
     }
 }
