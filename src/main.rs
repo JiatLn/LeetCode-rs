@@ -28,5 +28,6 @@ mod sum_in_a_matrix;
 mod k_items_with_the_maximum_sum;
 mod two_sum_ii_input_array_is_sorted;
 mod add_strings;
+mod lemonade_change;
 
 fn main() {}
